@@ -1,0 +1,39 @@
+@import 'variables';
+
+:root,
+* {
+  font-family: 'Nunito', system-ui, 'Avenir', Helvetica, Arial, sans-serif;
+  color: $text-color-400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 1px;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $body-background;
+}
+
+#root {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+svg[fill] *[fill] {
+  fill: currentColor;
+}
+svg[stroke] *[stroke] {
+  stroke: currentColor;
+}

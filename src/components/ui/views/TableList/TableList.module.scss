@@ -1,0 +1,31 @@
+@import 'variables';
+
+.container {
+  border-radius: 20px;
+  background-color: $gray-700;
+  padding: 16px;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  thead {
+    tr {
+      th {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  tr {
+    &:not(:first-child) {
+      td {
+        border-top: 1px solid $gray-400;
+      }
+    }
+  }
+  td {
+    text-align: center;
+    padding: 8px;
+  }
+}

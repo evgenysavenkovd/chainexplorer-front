@@ -1,0 +1,38 @@
+@import 'variables';
+
+.button {
+  background-color: $gray-700;
+  border: 1px solid $gray-400;
+  outline: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.1s;
+  svg {
+    width: 10px;
+    height: 10px;
+    fill: $gray-200;
+    transition: 0.1s;
+  }
+  &[data-success='true'] {
+    background-color: $green-400;
+    border-color: $green-400;
+    svg {
+      stroke: #fff;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &:hover:not([data-success='true']) {
+    background-color: $gray-700;
+    border-color: $gray-700;
+    svg {
+      fill: $main-400;
+    }
+  }
+}

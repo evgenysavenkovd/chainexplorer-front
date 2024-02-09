@@ -1,0 +1,21 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.content {
+  padding: 6px 12px;
+  background-color: $gray-700;
+  border: 1px solid $gray-400;
+  width: fit-content;
+  border-radius: 4px;
+  font-size: 14px;
+}

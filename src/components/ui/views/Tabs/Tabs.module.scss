@@ -1,0 +1,25 @@
+@import 'variables';
+
+.tabs {
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  .label {
+    background-color: transparent;
+    border: 1px solid $gray-400;
+    border-radius: 10px;
+    & + .label {
+      margin-left: 8px;
+    }
+    &[data-current='true'] {
+      background-color: $gray-700;
+    }
+  }
+}
+
+.content {
+  border-radius: 10px;
+  border: 1px solid $gray-700;
+}

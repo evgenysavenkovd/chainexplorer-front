@@ -1,0 +1,41 @@
+@import 'variables';
+
+.button {
+  background-color: transparent;
+  font-size: 16px;
+  border: 2px solid $main-400;
+  outline: none;
+  padding: 8px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  .content {
+    position: relative;
+    z-index: 1;
+    color: $main-400;
+    transition: 0.15s;
+    font-weight: 600;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 150%;
+    height: 0;
+    padding-bottom: 150%;
+    top: 150%;
+    left: -100%;
+    background-color: $main-400;
+    transition: 0.25s;
+    transform: rotate(35deg);
+  }
+  &:hover {
+    .content {
+      color: $text-color-400;
+    }
+    &::before {
+      top: -80%;
+      left: -20%;
+    }
+  }
+}

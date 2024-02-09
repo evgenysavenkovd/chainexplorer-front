@@ -1,0 +1,14 @@
+@mixin cols-layout($cols-count: 2) {
+  .col {
+    width: calc(100% / $cols-count);
+  }
+}
+
+.cols {
+  display: flex;
+  @for $i from 1 to 5 {
+    &[data-cols='#{$i}'] {
+      @include cols-layout($i);
+    }
+  }
+}

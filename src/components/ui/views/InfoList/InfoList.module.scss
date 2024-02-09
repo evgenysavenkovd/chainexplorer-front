@@ -1,0 +1,19 @@
+@import 'variables';
+
+.info-list {
+  list-style: none;
+  li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    .title {
+      width: 25%;
+      min-width: 200px;
+    }
+  }
+  hr {
+    border-color: $gray-400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

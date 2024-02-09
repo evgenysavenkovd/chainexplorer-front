@@ -1,0 +1,22 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  background-color: $gray-700;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  color: $text-color-400;
+  outline: none;
+  padding: 8px 14px;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
